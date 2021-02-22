@@ -33,7 +33,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="./"><strong>GETGEAR</strong> store</a>
-                <a href="#"><span class="navbar-brand glyphicon glyphicon-shopping-cart"></span>Cart</a>
+                <a href="#"><span style="color:red;"  class="navbar-brand glyphicon glyphicon-shopping-cart" >Cart</a>
                 
             </div>
             
@@ -46,15 +46,15 @@
                     <li><a href="login.php">Login</a></li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">24x7 Support <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">24/7 Support <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="#"><strong>Call: </strong>+256-700-768-312</a></li>
                             <li><a href="#"><strong>Mail: </strong>getgearug@gmail.com</a></li>
                             <li class="divider"></li>
                             <li><a href="#"><strong>Address: </strong>
                                 <div>
-                                    Twese Building, Room F17,<br />
-                                    Wilson Street,<br />
+                                    Uganda martryrs university, Room F17,<br />
+                                    Rubaga road,<br />
                                     Kampala, Uganda
                                 </div>
                             </a></li>
@@ -142,7 +142,7 @@
     <!-- /.container -->
     <div class="col-md-12 download-app-box text-center">
 
-        <span class="glyphicon glyphicon-download-alt"></span>Download Our Android App and Get 10% additional Off on all Gears . <a href="https://play.google.com/store/apps/details?id=com.waglex.getgear" class="btn btn-danger btn-lg">DOWNLOAD  NOW</a>
+        <span class="glyphicon glyphicon-download-alt"></span>Download Our Android App and Get 10% additional Off on all Gears . <a href="#" class="btn btn-danger btn-lg">DOWNLOAD  NOW</a>
 
     </div>
 
@@ -178,22 +178,22 @@
                 <strong>Our Location</strong>
                 <hr>
                 <p>
-                    Twese Building, Room F17, Wilson Street,<br />
+                    uganda martryrs universty, Room F17, Rubaga road,<br />
                                     Kampala, Uganda<br />
                     Call: +256-700-768-312<br>
                     Email: getgearug@gmail.com<br>
                 </p>
 
-                2019 www.getgear.store | All Right Reserved
+                2021 www.getgear.store | &copy;All Right Reserved Fred,Gombya,Brian and Sandra
             </div>
             <div class="col-md-4 social-box">
                 <strong>We are Social </strong>
                 <hr>
                 <a href="#"><i class="fa fa-facebook-square fa-3x "></i></a>
-                <!--<a href="#"><i class="fa fa-twitter-square fa-3x "></i></a>
+                <a href="#"><i class="fa fa-twitter-square fa-3x "></i></a>
                 <a href="#"><i class="fa fa-google-plus-square fa-3x c"></i></a>
                 <a href="#"><i class="fa fa-linkedin-square fa-3x "></i></a>
-                <a href="#"><i class="fa fa-pinterest-square fa-3x "></i></a>-->
+                <a href="#"><i class="fa fa-pinterest-square fa-3x "></i></a>
                 <p>
                     Join our conversations on our social media platforms, and get involved in our other programs. Enjoy!. 
                 </p>
@@ -203,7 +203,7 @@
     </div>
     <!-- /.col -->
     <div class="col-md-12 end-box ">
-        &copy; 2019 | &nbsp; All Rights Reserved | &nbsp; www.getgear.store | &nbsp; 24x7 support | &nbsp; Email us: getgearug@gmail.com
+        &copy; 2021 | &nbsp; All Rights Reserved Fred,Gombya,Brian and Sandra | &nbsp; www.getgear.store | &nbsp; 24/7 support | &nbsp; Email us: getgearug@gmail.com
     </div>
     <!-- /.col -->
     <!--Footer end -->
