@@ -1,0 +1,870 @@
+@keyframes bgMotion {
+    from, 62.15% {
+        background-position-x: 1920px;
+    }
+    66.67%, 96.05% {
+        background-position-x: -137px;
+    }
+    to {
+        background-position-x: 1920px;
+    }
+}
+
+@keyframes changeLogo {
+    from, 65.67% {
+        background-image: url("../img/logo.png");
+    }
+    66.67%, 96.05% {
+        background-image: url("../img/wh-logo.png");
+    }
+    97.05%, to {
+        background-image: url("../img/logo.png");
+    }
+}
+
+@keyframes firstSlideMotion {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    2.26%, 29.38% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    31.64%, to {
+        opacity: 0;
+    }
+}
+
+@keyframes firstSlideImgMotion {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    2.26%, 62.15% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    64.41%, to {
+        opacity: 0;
+    }
+}
+
+@keyframes secondSlideMotion {
+    from, 32.77% {
+        opacity: 0;
+    }
+    35.03%, 62.15% {
+        opacity: 1;
+    }
+    64.41%, to {
+        opacity: 0;
+    }
+}
+
+@keyframes threeSlideMotion {
+    from, 64.41% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    66.67%, 96.05% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    98.31%, to {
+        opacity: 0;
+    }
+}
+
+@keyframes btnMotion {
+    from, 13.56% {
+        transform: scale(1);
+    }
+    14.69% {
+        transform: scale(1.2);
+    }
+    15.82% {
+        transform: scale(1);
+    }
+    16.95% {
+        transform: scale(1.2);
+    }
+    18.08%, 46.33% {
+        transform: scale(1);
+    }
+    47.46% {
+        transform: scale(1.2);
+    }
+    48.59% {
+        transform: scale(1);
+    }
+    49.72% {
+        transform: scale(1.2);
+    }
+    50.85%, 77.97% {
+        transform: scale(1);
+    }
+    79.1% {
+        transform: scale(1.2);
+    }
+    80.23% {
+        transform: scale(1);
+    }
+    81.36% {
+        transform: scale(1.2);
+    }
+    82.49% {
+        transform: scale(1);
+    }
+    83.62% {
+        transform: scale(1.2);
+    }
+    84.75%, to {
+        transform: scale(1);
+    }
+}
+
+.sl-adapt-banner {
+    width: 100%;
+    min-width: 280px;
+    max-width: 1920px;
+    height: 90px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    background: url("../img/wh_bg_1920.png") center no-repeat;
+    background-position-y: -55px;
+    background-color: #0d0a11;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-animation: bgMotion 8.8s infinite linear;
+    -o-animation: bgMotion 8.8s infinite linear;
+    -ms-animation: bgMotion 8.8s infinite linear;
+    animation: bgMotion 8.8s infinite linear;
+}
+
+.abn-logo {
+    left: 256px;
+    background: url(../img/logo.png) center no-repeat;
+    background-size: contain;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 157px;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    -webkit-animation: changeLogo 8.8s infinite linear;
+    -o-animation: changeLogo 8.8s infinite linear;
+    -ms-animation: changeLogo 8.8s infinite linear;
+    animation: changeLogo 8.8s infinite linear;
+}
+
+.abn-wrap {
+    width: 1100px;
+    height: 90px;
+    margin: 0 auto;
+    position: relative;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.abn-slide-wrap {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.abn-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.abn-slide-one-wrap {
+    -webkit-mask-image: linear-gradient(to left, transparent 3%, #0d0a11 7%, #0d0a11 93%, transparent 97%);
+    mask-image: linear-gradient(to left, transparent 3%, #0d0a11 7%, #0d0a11 93%, transparent 97%);
+}
+
+.abn-slide-two-wrap {
+    -webkit-mask-image: linear-gradient(to left, transparent 3%, #cec9c6 7%, #cec9c6 93%, transparent 97%);
+    mask-image: linear-gradient(to left, transparent 3%, #cec9c6 7%, #cec9c6 93%, transparent 97%);
+}
+.abn-slide-two_strong br {
+    display: none;
+}
+
+.abn-slide-one_text {
+    -webkit-animation: firstSlideMotion 8.8s infinite linear;
+    -o-animation: firstSlideMotion 8.8s infinite linear;
+    -ms-animation: firstSlideMotion 8.8s infinite linear;
+    animation: firstSlideMotion 8.8s infinite linear;
+}
+
+.abn-slide-two_text {
+    -webkit-animation: secondSlideMotion 8.8s infinite linear;
+    -o-animation: secondliDdeMotion 8.8s infinite linear;
+    -ms-animation: secondSlideMotion 8.8s infinite linear;
+    animation: secondSlideMotion 8.8s infinite linear;
+}
+
+.abn-slide-two {
+    -webkit-animation: threeSlideMotion 8.8s infinite linear;
+    -o-animation: threeSlideMotion 8.8s infinite linear;
+    -ms-animation: threeSlideMotion 8.8s infinite linear;
+    animation: threeSlideMotion 8.8s infinite linear;
+}
+
+.abn-slide-two {
+    left: -37px;
+}
+
+.abn-slide-one_text {
+    color: #e0dbd7;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 149px;
+    text-transform: uppercase;
+    height: 100%;
+    width: 520px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    z-index: 1;
+    white-space: normal;
+    text-align: center;
+}
+
+.abn-slide-two_text {
+    color: #e0dbd7;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 154px;
+    text-transform: uppercase;
+    height: 100%;
+    width: 650px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 32px;
+    z-index: 1;
+    white-space: normal;
+    text-align: center;
+}
+
+.abn-slide-one_img {
+    background: url(../img/img_boy.png) center no-repeat;
+    background-size: contain;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    width: 251px;
+    height: 183px;
+    top: -40px;
+    right: 173px;
+    -webkit-animation: firstSlideImgMotion 8.8s infinite linear;
+    -o-animation: firstSlideImgMotion 8.8s infinite linear;
+    -ms-animation: firstSlideImgMotion 8.8s infinite linear;
+    animation: firstSlideImgMotion 8.8s infinite linear;
+}
+
+.abn-slide-one_strong {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    top: 31px;
+    left: 219px;
+}
+
+.abn-slide-one_know {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+    top: 26px;
+}
+
+.abn-slide-one_start {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 36px;
+    top: 26px;
+    left: 64px;
+}
+
+.abn-slide-one_bet {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    top: 31px;
+    left: 170px;
+}
+
+.abn-slide-one_text > span,
+.abn-slide-two_text > span,
+.abn-slide-three_text > span {
+    position: absolute;
+}
+
+.abn-slide-three_text {
+    height: 100%;
+    width: 640px;
+    left: 153px;
+    top: 1px;
+    position: absolute;
+    text-transform: uppercase;
+    color: #4f4a4e;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    z-index: 1;
+    white-space: normal;
+    text-align: center;
+}
+
+.abn-slide-two_strong {
+    font-size: 31px;
+    color: #282634;
+    left: 317px;
+    top: 22px;
+    font-weight: 400;
+}
+
+.abn-slide_currency {
+    font-weight: 700;
+    font-size: 36.5px;
+}
+
+.abn-slide-two_bonus {
+    font-size: 31px;
+    color: #282634;
+    left: 4px;
+    top: 29px;
+    font-weight: 400;
+}
+
+.abn-slide-two_img {
+    background: url(../img/img_girl.png) center no-repeat;
+    background-size: contain;
+    width: 206px;
+    height: 309px;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: -65px;
+    right: 155px;
+}
+
+.abn-wrap-btn {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 247px;
+    width: 182px;
+    height: 90px;
+    border-radius: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    -webkit-animation: btnMotion 8.8s infinite linear;
+    -o-animation: btnMotion 8.8s infinite linear;
+    -ms-animation: btnMotion 8.8s infinite linear;
+    animation: btnMotion 8.8s infinite linear;
+}
+
+.abn-btn {
+    position: absolute;
+    box-shadow: 0 5px 0 #ac150b;
+    border-radius: 10px;
+    background-color: #211b48;
+    background-image: linear-gradient(to bottom, #f96d61 0%, #e7473c 100%);
+    justify-content: center;
+    height:38px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 5;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0 1px 0 rgba(172, 21, 11, 0.6);
+    text-transform: uppercase;
+}
+
+.abn-btn br {
+    display: none;
+}
+
+@media screen and (max-width: 1750px) {
+    .abn-logo {
+        left: 136px;
+        width: 157px;
+    }
+
+    .abn-wrap-btn {
+        right: 136px;
+        width: 143px;
+    }
+
+    .abn-btn {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1490px) {
+    .abn-wrap {
+        width: 763px;
+    }
+
+    .abn-slide-one_text {
+        left: 170px;
+        font-size: 30px;
+        width: 242px;
+
+    }
+
+    .abn-slide-two_text {
+        left: 180px;
+        width: 230px;
+    }
+
+    .abn-slide-one_img {
+        right: 134px;
+    }
+
+    .abn-slide-one_strong {
+        font-size: 20px;
+        top: 48px;
+        left: 11px;
+    }
+
+    .abn-slide-one_start {
+        font-size: 30px;
+        top: 12px;
+        left: 77px;
+    }
+
+    .abn-slide-one_bet {
+        font-size: 16px;
+        top: 48px;
+        left: 10px;
+    }
+
+    .abn-slide-one_know {
+        font-size: 30px;
+        left: 39px;
+        top: 13px;
+    }
+
+    .abn-slide-three_text {
+        left: 210px;
+        width: 270px;
+    }
+
+    .abn-slide-two_img {
+        width: 228px;
+        top: -63px;
+        right: 106px;
+    }
+
+    .abn-slide-two_bonus {
+        font-size: 26px;
+        left: 8px;
+        top: 18px;
+    }
+
+    .abn-slide-two_strong {
+        font-size: 26px;
+        left: 5px;
+        top: 42px;
+    }
+
+    .abn-slide_currency {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    @keyframes bgMotion {
+        from, 62.15% {
+            background-position-x: 1260px;
+        }
+        66.67%, 96.05% {
+            background-position-x: -137px;
+        }
+        to {
+            background-position-x: 1260px;
+        }
+    }
+    .abn-logo {
+        left: 82px;
+        width: 130px;
+    }
+
+    .abn-wrap-btn {
+        right: 78px;
+        width: 143px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    @keyframes bgMotion {
+        from, 62.15% {
+            background-position-x: 970px;
+        }
+        66.67%, 96.05% {
+            background-position-x: -137px;
+        }
+        to {
+            background-position-x: 970px;
+        }
+    }
+    .abn-logo {
+        left: 19px;
+        width: 104px;
+    }
+
+    .abn-wrap-btn {
+        right: 19px;
+        width: 73px;
+    }
+
+    .abn-btn {
+        height: 50px;
+    }
+
+    .abn-btn br {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .abn-wrap {
+        width: 640px;
+    }
+
+    .abn-slide-one_text {
+        left: 145px;
+        width: 224px;
+    }
+
+    .abn-slide-one_know {
+        font-size: 26px;
+        left: 30px;
+        top: 16px;
+    }
+
+    .abn-slide-one_strong {
+        font-size: 20px;
+        top: 46px;
+        left: 5px;
+    }
+
+    .abn-slide-one_img {
+        right: 72px;
+    }
+
+    .abn-slide-two_text {
+        left: 148px;
+        width: 212px;
+    }
+
+    .abn-slide-one_start {
+        font-size: 26px;
+        top: 16px;
+        left: 68px;
+    }
+
+    .abn-slide-one_bet {
+        font-size: 16px;
+        top: 46px;
+        left: 10px;
+    }
+
+    .abn-slide-three_text {
+        left: 188px;
+        width: 250px;
+    }
+
+    .abn-slide-two_bonus {
+        font-size: 23px;
+        left: 9px;
+        top: 19px;
+    }
+
+    .abn-slide_currency {
+        font-size: 27px;
+    }
+
+    .abn-slide-two_strong {
+        font-size: 22px;
+        left: 9px;
+        top: 42px;
+    }
+
+    .abn-slide-two_img {
+        right: 44px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .abn-wrap {
+        width: 100%;
+    }
+
+    .abn-slide-one_img {
+        left: 171px;
+        right: 0;
+        margin: 0 auto;
+        width: 203px;
+    }
+
+    .abn-slide-one_text {
+        left: -55px;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .abn-slide-one_know {
+        font-size: 20px;
+        left: 34px;
+        top: 24px;
+    }
+
+    .abn-slide-one_strong {
+        font-size: 18px;
+        top: 46px;
+        left: 9px;
+    }
+
+    .abn-slide-one_start {
+        font-size: 20px;
+        top: 23px;
+        left: 75px;
+    }
+
+    .abn-slide-one_bet {
+        font-size: 16px;
+        left: 25px;
+    }
+
+    .abn-slide-two_text {
+        left: -85px;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .abn-slide-two_img {
+        width: 173px;
+        top: -69px;
+        left: 246px;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .abn-slide-two_bonus {
+        font-size: 18.5px;
+        left: 32px;
+        top: 25px;
+    }
+
+    .abn-slide-two_strong {
+        font-size: 18px;
+        left: 34px;
+        top: 44px;
+    }
+
+    .abn-slide_currency {
+        font-size: 20.5px;
+    }
+
+    .abn-slide-three_text {
+        left: 6px;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .abn-logo {
+        left: 6%;
+        width: 55px;
+    }
+
+    .abn-wrap {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .abn-slide-one-wrap,
+    .abn-slide-two-wrap {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .abn-slide-one_text {
+        width: 90px;
+        left: -72px;
+    }
+
+    .abn-slide-one_know {
+        font-size: 15px;
+        line-height: 16px;
+        left: 9px;
+        top: 18px;
+    }
+
+    .abn-slide-one_strong {
+        font-size: 13px;
+        top: 49px;
+    }
+
+    .abn-slide-two_text {
+        width: 100px;
+        left: -88px;
+    }
+
+    .abn-slide-one_start {
+        font-size: 17px;
+        top: 17px;
+        left: 40px;
+    }
+
+    .abn-slide-one_bet {
+        font-size: 15px;
+        top: 37px;
+    }
+
+    .abn-slide-three_text {
+        width: 90px;
+        left: 0;
+        top: -9px
+    }
+
+    .abn-slide-two_bonus {
+        font-size: 10px;
+        line-height: 14px;
+        font-weight: bold;
+        left: 17px;
+        top: 25px;
+    }
+
+    .bonus {
+        font-size: 18px;
+    }
+
+    .abn-slide-two_strong {
+        font-size: 13px;
+        line-height: 14px;
+        left: 15px;
+        top: 54px;
+    }
+
+    .abn-slide-two_strong br {
+        display: block;
+    }
+
+    .abn-slide_currency {
+        font-size: 14px;
+    }
+
+    .abn-wrap-btn {
+        right: 6%;
+        width: 50px;
+    }
+
+    .abn-btn {
+        height: 30px;
+        padding: 5px;
+        font-size: 10px;
+        box-shadow: 0 3px 0 #ac150b;
+        border-radius: 6px;
+    }
+
+    .abn-btn br {
+        display: none;
+    }
+
+    .abn-slide-one_img {
+        width: 95px;
+        height: 71px;
+        left: 76px;
+        top: 12px;
+    }
+
+    .abn-slide-two_img {
+        width: 81px;
+        height: 118px;
+        top: -9px;
+        left: 159px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .abn-logo {
+        left: 3%;
+    }
+
+    .abn-wrap-btn {
+        right: 3%;
+    }
+}
